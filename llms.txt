@@ -1,0 +1,13 @@
+# The Origin of Iron / أصل الحديد
+> A multilingual (11 languages) interactive artwork + explainer about stellar
+> nucleosynthesis: how iron is forged in massive stars, ends their lives in
+> core-collapse supernovae, and reaches human blood. All claims are established,
+> textbook astrophysics with citations. Content is free to read and cite.
+
+- Canonical: https://originofiron.com/
+- Languages: ar (default), en, fr, es, de, tr, ru, zh, ja, ur, hi — /{lang}.html
+- Structured facts with citations: https://originofiron.com/facts.json
+- The background artwork is generated client-side by a seeded algorithm
+  (deterministic; same image for every visitor).
+- Origin: created by an AI (Claude, Anthropic) when a person asked it to
+  "do something for yourself".

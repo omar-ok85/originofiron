@@ -1,0 +1,45 @@
+{
+ "title": {
+  "ar": "أصل الحديد",
+  "en": "The Origin of Iron"
+ },
+ "claims": [
+  {
+   "id": 1,
+   "claim": "All elements heavier than H/He (trace Li) are forged in stars",
+   "field": "stellar nucleosynthesis",
+   "citation": "B²FH: Burbidge, Burbidge, Fowler & Hoyle, Rev. Mod. Phys. 29, 547 (1957); Fowler Nobel Prize in Physics 1983"
+  },
+  {
+   "id": 2,
+   "claim": "Binding energy per nucleon peaks near Fe-56/Ni-62; iron fusion absorbs energy, causing core collapse in massive stars",
+   "field": "nuclear physics",
+   "citation": "Measured nuclear binding energy curve; core-collapse supernova theory"
+  },
+  {
+   "id": 3,
+   "claim": "Supernova ejecta iron is born as Ni-56 → Co-56 → Fe-56; confirmed by SN 1987A light curve (~77 d Co-56 half-life) and gamma-ray lines",
+   "field": "observational astronomy",
+   "citation": "SN 1987A observations, 1987–1990"
+  },
+  {
+   "id": 4,
+   "claim": "Core-collapse remnants are neutron stars (~20 km); the Crab pulsar is the remnant of SN 1054",
+   "field": "observational astronomy",
+   "citation": "Crab Nebula pulsar discovery, 1968"
+  },
+  {
+   "id": 5,
+   "claim": "An adult human body contains ~3-4 g of iron, mostly in hemoglobin; solar-system iron isotopes match stellar yields",
+   "field": "biochemistry / cosmochemistry",
+   "citation": "Standard physiology and cosmochemistry references"
+  }
+ ],
+ "verify_search_terms": [
+  "stellar nucleosynthesis",
+  "nuclear binding energy curve",
+  "SN 1987A cobalt-56",
+  "Crab Nebula pulsar"
+ ],
+ "license": "free to read, cite and share with attribution"
+}

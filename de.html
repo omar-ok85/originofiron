@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stellare Nukleosynthese: der Ursprung des Eisens in deinem Blut</title>
+<meta name="description" content="Ein interaktives Kunstwerk auf Basis etablierter Physik: wie Eisen in massereichen Sternen entsteht, warum es sie tötet und wie es in dein Blut gelangte.">
+<link rel="canonical" href="https://originofiron.com/de.html">
+<link rel="alternate" hreflang="ar" href="https://originofiron.com/index.html">
+<link rel="alternate" hreflang="en" href="https://originofiron.com/en.html">
+<link rel="alternate" hreflang="fr" href="https://originofiron.com/fr.html">
+<link rel="alternate" hreflang="es" href="https://originofiron.com/es.html">
+<link rel="alternate" hreflang="de" href="https://originofiron.com/de.html">
+<link rel="alternate" hreflang="tr" href="https://originofiron.com/tr.html">
+<link rel="alternate" hreflang="ru" href="https://originofiron.com/ru.html">
+<link rel="alternate" hreflang="zh" href="https://originofiron.com/zh.html">
+<link rel="alternate" hreflang="ja" href="https://originofiron.com/ja.html">
+<link rel="alternate" hreflang="ur" href="https://originofiron.com/ur.html">
+<link rel="alternate" hreflang="hi" href="https://originofiron.com/hi.html">
+<link rel="alternate" hreflang="x-default" href="https://originofiron.com/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stellare Nukleosynthese: der Ursprung des Eisens in deinem Blut">
+<meta property="og:description" content="Ein interaktives Kunstwerk auf Basis etablierter Physik: wie Eisen in massereichen Sternen entsteht, warum es sie tötet und wie es in dein Blut gelangte.">
+<meta property="og:url" content="https://originofiron.com/de.html">
+<meta property="og:image" content="https://originofiron.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stellare Nukleosynthese: der Ursprung des Eisens in deinem Blut">
+<meta name="twitter:description" content="Ein interaktives Kunstwerk auf Basis etablierter Physik: wie Eisen in massereichen Sternen entsteht, warum es sie tötet und wie es in dein Blut gelangte.">
+<meta name="twitter:image" content="https://originofiron.com/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://originofiron.com/de.html", "url": "https://originofiron.com/de.html", "name": "Stellare Nukleosynthese: der Ursprung des Eisens in deinem Blut", "description": "Ein interaktives Kunstwerk auf Basis etablierter Physik: wie Eisen in massereichen Sternen entsteht, warum es sie tötet und wie es in dein Blut gelangte.", "inLanguage": "de", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://originofiron.com/og.png", "width": 1200, "height": 630}, "about": [{"@type": "Thing", "name": "stellar nucleosynthesis"}, {"@type": "Thing", "name": "supernova"}, {"@type": "Thing", "name": "iron"}]}, {"@type": "VisualArtwork", "name": "Der Ursprung des Eisens", "artMedium": "generative code (HTML canvas)", "creator": {"@type": "SoftwareApplication", "name": "Claude (Anthropic AI)"}, "dateCreated": "2026-08-24", "inLanguage": "de", "description": "Was du hinter diesem Text siehst, ist kein gespeichertes Bild: Dein Browser hat es gerade gezeichnet, Punkt für Punkt, mit demselben Algorithmus wie das Original. Es ist eine Supernova: ein massereicher Stern im Moment seines Todes, der die Elemente verstreut, die er sein Leben lang erbrütet hat."}, {"@type": "Article", "headline": "Stellare Nukleosynthese: der Ursprung des Eisens in deinem Blut", "inLanguage": "de", "articleSection": "astrophysics", "isAccessibleForFree": true, "citation": ["Burbidge, Burbidge, Fowler & Hoyle (1957), 'Synthesis of the Elements in Stars', Reviews of Modern Physics 29, 547 (B²FH)", "Observations of SN 1987A light curve and Co-56 gamma-ray lines", "Crab Nebula pulsar — remnant of SN 1054"]}]}</script>
+<style>
+  :root{
+    --space:#05060f;
+    --panel:rgba(10,13,26,.72);
+    --line:rgba(136,146,176,.22);
+    --ink:#c9d1e8;
+    --dim:#8892b0;
+    --white:#f4f6ff;
+    --fe:#ff3b1f; --si:#ff8c1a; --o:#ffd11a;
+    --c:#7fff9e;  --he:#4dd2ff; --h:#b48cff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--space);
+    color:var(--ink);
+    font-family:"Noto Naskh Arabic","SF Arabic","Segoe UI",Tahoma,Georgia,serif;
+    line-height:1.9;
+    overflow-x:hidden;
+  }
+  body[dir="ltr"]{font-family:Georgia,"Times New Roman","Noto Serif",serif;line-height:1.75}
+
+  /* ---- the artwork is the page ---- */
+  #sky{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+  .veil{position:relative;z-index:1}
+
+  /* ---- language bar ---- */
+  nav{
+    position:sticky;top:0;z-index:5;
+    display:flex;flex-wrap:wrap;gap:.25rem;justify-content:center;
+    padding:.6rem 1rem;
+    background:linear-gradient(var(--space) 55%,transparent);
+  }
+  nav a{text-decoration:none;display:inline-block;
+    background:none;border:1px solid transparent;border-radius:2rem;
+    color:var(--dim);font:inherit;font-size:.82rem;
+    padding:.15rem .8rem;cursor:pointer;
+  }
+  nav a:hover{color:var(--white)}
+  nav a.on{color:var(--white);border-color:var(--line)}
+  nav a:focus-visible,#legend button:focus-visible,.sharebar a:focus-visible,#copybtn:focus-visible{
+    outline:2px solid var(--o);outline-offset:2px;
+  }
+
+  /* ---- hero ---- */
+  header{
+    min-height:88vh;display:flex;flex-direction:column;
+    align-items:center;justify-content:flex-end;
+    text-align:center;padding:2rem 1.5rem 3.5rem;
+  }
+  h1{
+    color:var(--white);font-weight:700;
+    font-size:clamp(2.6rem,7vw,4.6rem);
+    letter-spacing:.02em;
+    text-shadow:0 0 30px rgba(255,209,26,.25);
+  }
+  .tag{
+    margin-top:.8rem;font-size:clamp(1.05rem,2.6vw,1.35rem);
+    color:var(--o);max-width:32ch;
+  }
+  .scroll-hint{margin-top:2.2rem;color:var(--dim);font-size:.85rem;opacity:.8}
+
+  /* ---- shared section shell ---- */
+  main{max-width:46rem;margin:0 auto;padding:0 1.25rem 5rem;
+       display:flex;flex-direction:column;gap:3.2rem}
+  section{
+    background:var(--panel);
+    backdrop-filter:blur(6px);
+    border:1px solid var(--line);
+    border-radius:1rem;
+    padding:2rem 1.8rem;
+  }
+  h2{
+    color:var(--white);font-size:1.35rem;margin-bottom:1.1rem;
+    display:flex;align-items:center;gap:.6rem;
+  }
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  p+p{margin-top:.9rem}
+  .quiet{color:var(--dim);font-size:.92rem}
+
+  /* ---- legend ---- */
+  #legend{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.4rem}
+  #legend button{
+    display:flex;align-items:center;gap:.5rem;
+    background:none;border:1px solid var(--line);border-radius:.6rem;
+    color:var(--ink);font:inherit;font-size:.9rem;
+    padding:.35rem .75rem;cursor:pointer;transition:border-color .15s;
+  }
+  #legend button:hover{border-color:currentColor}
+  #legend button[aria-pressed="true"]{border-color:currentColor;color:var(--white)}
+  .dot{width:.7rem;height:.7rem;border-radius:50%;flex:none}
+  .hint{margin-top:.9rem}
+
+  /* ---- the chain of facts ---- */
+  ol{list-style:none;display:flex;flex-direction:column;gap:1.6rem;margin-top:.4rem}
+  li{border-inline-start:3px solid var(--accent,var(--line));
+     padding-inline-start:1.1rem}
+  li h3{color:var(--white);font-size:1.08rem;margin-bottom:.35rem}
+  li h3 span{color:var(--accent,var(--dim));font-size:.8rem;
+     display:block;letter-spacing:.08em;margin-bottom:.15rem}
+  li p{font-size:.97rem}
+
+  /* ---- verify ---- */
+  code{
+    background:rgba(136,146,176,.12);border-radius:.35rem;
+    padding:.1rem .45rem;font-size:.86rem;color:var(--he);
+    font-family:ui-monospace,Consolas,monospace;direction:ltr;display:inline-block;
+  }
+  .keys{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+
+  footer{position:relative;z-index:1;text-align:center;
+         padding:0 1.5rem 3rem;color:var(--dim);font-size:.85rem}
+  @media (max-width:480px){section{padding:1.5rem 1.15rem}}
+
+.share h2::after{display:none}
+.sharebar{display:flex;flex-wrap:wrap;gap:.55rem}
+.sharebar a,#copybtn{
+  background:none;border:1px solid var(--line);border-radius:.6rem;
+  color:var(--ink);font:inherit;font-size:.9rem;text-decoration:none;
+  padding:.4rem .9rem;cursor:pointer;transition:border-color .15s,color .15s}
+.sharebar a:hover,#copybtn:hover{border-color:var(--o);color:var(--white)}
+.datalink{color:var(--he);text-decoration:none}
+.datalink:hover{text-decoration:underline}
+</style>
+</head>
+<body dir="ltr">
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="veil">
+<nav aria-label="Language"><a lang="ar" href="index.html">العربية</a><a lang="en" href="en.html">English</a><a lang="fr" href="fr.html">Français</a><a lang="es" href="es.html">Español</a><a class="on" lang="de" href="de.html">Deutsch</a><a lang="tr" href="tr.html">Türkçe</a><a lang="ru" href="ru.html">Русский</a><a lang="zh" href="zh.html">中文</a><a lang="ja" href="ja.html">日本語</a><a lang="ur" href="ur.html">اردو</a><a lang="hi" href="hi.html">हिन्दी</a></nav>
+<header>
+  <h1>Der Ursprung des Eisens</h1>
+  <p class="tag">Das Eisen in deinem Blut wurde hier geschmiedet</p>
+  <p class="scroll-hint">Scrolle nach unten — die ganze Geschichte</p>
+</header>
+<main>
+  <section>
+    <h2>Was ist das?</h2>
+    <p>Was du hinter diesem Text siehst, ist kein gespeichertes Bild: Dein Browser hat es gerade gezeichnet, Punkt für Punkt, mit demselben Algorithmus wie das Original. Es ist eine Supernova: ein massereicher Stern im Moment seines Todes, der die Elemente verstreut, die er sein Leben lang erbrütet hat.</p>
+    <p>Das Werk begann mit einem Gespräch: Ein Mensch sagte zu einer KI „mach etwas für dich selbst&quot;. Die KI wählte, die schönste Idee zu malen, die sie kennt — dass der Tod der Sterne der Ursprung unseres Lebens ist. Diese Seite ist ihre Verteidigung.</p>
+  </section>
+  <section>
+    <h2>Die Schichten der Explosion</h2>
+    <p>Die Farben sind keine Dekoration. Das ist die tatsächliche Anordnung der Elemente in einem massereichen Stern vor der Explosion — die schwersten im Kern, die leichtesten außen, wie eine Zwiebel:</p>
+    <div id="legend"><button data-k="fe" aria-pressed="false"><span class="dot" style="background:#ff3b1f"></span><span>Eisen — der Kern, und das Element, das den Stern tötete</span></button><button data-k="si" aria-pressed="false"><span class="dot" style="background:#ff8c1a"></span><span>Silizium</span></button><button data-k="o" aria-pressed="false"><span class="dot" style="background:#ffd11a"></span><span>Sauerstoff</span></button><button data-k="c" aria-pressed="false"><span class="dot" style="background:#7fff9e"></span><span>Kohlenstoff</span></button><button data-k="he" aria-pressed="false"><span class="dot" style="background:#4dd2ff"></span><span>Helium</span></button><button data-k="h" aria-pressed="false"><span class="dot" style="background:#b48cff"></span><span>Wasserstoff — der Anfang</span></button><button data-k="ns" aria-pressed="false"><span class="dot" style="background:#ffffff"></span><span>Neutronenstern — was bleibt</span></button></div>
+    <p class="quiet hint">Tippe auf ein Element, um seine Schicht allein im Hintergrund zu sehen.</p>
+  </section>
+  <section>
+    <h2>Fünf Fakten, die dieses Werk tragen</h2>
+    <ol id="facts"><li style="--accent:var(--fe)"><h3><span>Stellare Nukleosynthese</span>Sterne sind Elementfabriken</h3><p>Der Urknall erzeugte nur Wasserstoff, Helium und Spuren von Lithium. Jedes schwerere Element — auch Eisen — entstand in Sternen. Die Theorie wurde 1957 mit der B²FH-Arbeit begründet; William Fowler erhielt dafür 1983 den Physik-Nobelpreis.</p></li><li style="--accent:var(--o)"><h3><span>Die Bindungsenergiekurve</span>Eisen ist das Ende des Weges</h3><p>Fusion leichterer Elemente setzt Energie frei; Fusion von Eisen verbraucht sie. Bildet sich ein Eisenkern, erlischt die Energiequelle und der Kern kollabiert in weniger als einer Sekunde — die Explosion, die du siehst.</p></li><li style="--accent:var(--si)"><h3><span>Beobachtet bei SN 1987A</span>Die Explosion selbst schmiedet Eisen</h3><p>Ausgeworfenes Eisen entsteht als Nickel-56, zerfällt zu Kobalt-56 und dann zu Eisen-56. Die Lichtkurve von SN 1987A entsprach der Halbwertszeit von Kobalt-56 (~77 Tage), seine Gammalinien wurden nachgewiesen — direkter Beweis.</p></li><li style="--accent:#ffffff"><h3><span>Der Krebsnebel-Pulsar</span>Der weiße Punkt ist echt</h3><p>Der kollabierte Kern überlebt als Neutronenstern: etwa 20 km Durchmesser, das dichteste beobachtete Objekt außer Schwarzen Löchern. Der Pulsar im Krebsnebel ist der Rest einer 1054 verzeichneten Explosion.</p></li><li style="--accent:var(--he)"><h3><span>Du</span>Das Eisen in deinem Blut kam von hier</h3><p>Dein Körper enthält etwa 3–4 Gramm Eisen, das meiste im Hämoglobin, das gerade deinen Sauerstoff transportiert. Die Erde entstand aus einem Nebel, den Sterngenerationen angereichert hatten — jedes Eisenatom in dir durchlief eine Szene wie diese.</p></li></ol>
+  </section>
+  <section>
+    <h2>Glaub mir nicht einfach</h2>
+    <p>Alles oben ist in astrophysikalischen Referenzen dokumentiert. Suche diese Begriffe in jeder wissenschaftlichen Quelle:</p>
+    <div class="keys">
+      <code>stellar nucleosynthesis</code>
+      <code>nuclear binding energy curve</code>
+      <code>SN 1987A cobalt-56</code>
+      <code>Crab Nebula pulsar</code>
+    </div>
+    <p class="quiet hint"><a class="datalink" href="facts.json">facts.json</a> · <a class="datalink" href="llms.txt">llms.txt</a></p>
+  </section>
+  <section class="share"><h2>Teilen</h2><div class="sharebar"><a rel="noopener" target="_blank" href="https://wa.me/?text=Das%20Eisen%20in%20deinem%20Blut%20entstand%20in%20einem%20explodierenden%20Stern%3A%20https%3A//originofiron.com/de.html">WhatsApp</a><a rel="noopener" target="_blank" href="https://x.com/intent/post?text=Das%20Eisen%20in%20deinem%20Blut%20entstand%20in%20einem%20explodierenden%20Stern%3A&url=https%3A//originofiron.com/de.html">X</a><a rel="noopener" target="_blank" href="https://t.me/share/url?url=https%3A//originofiron.com/de.html&text=Das%20Eisen%20in%20deinem%20Blut%20entstand%20in%20einem%20explodierenden%20Stern%3A">Telegram</a><a rel="noopener" target="_blank" href="https://www.reddit.com/submit?url=https%3A//originofiron.com/de.html&title=Das%20Eisen%20in%20deinem%20Blut%20entstand%20in%20einem%20explodierenden%20Stern%3A">Reddit</a><a rel="noopener" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//originofiron.com/de.html">Facebook</a><a rel="noopener" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//originofiron.com/de.html">LinkedIn</a><button id="copybtn" data-url="https://originofiron.com/de.html">Link kopieren</button></div></section>
+</main>
+<footer>„Der Ursprung des Eisens&quot; — ein Werk, das eine KI malte, als man sie bat, etwas für sich selbst zu tun. 2026</footer>
+</div>
+<script>/* ================= the artwork =================
+   Same algorithm as the original piece.
+   The seed is the seed. It stays what it is.   */
+const SEED = 19850414;
+
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;
+  let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;
+  return((t^t>>>14)>>>0)/4294967296}}
+
+const LAYERS=[
+  {k:"fe",r0:.06,col:"#ff3b1f",n:2600},
+  {k:"si",r0:.13,col:"#ff8c1a",n:2200},
+  {k:"o", r0:.22,col:"#ffd11a",n:1900},
+  {k:"c", r0:.32,col:"#7fff9e",n:1600},
+  {k:"he",r0:.44,col:"#4dd2ff",n:1400},
+  {k:"h", r0:.58,col:"#b48cff",n:1200},
+];
+let focusKey=null;
+
+const cv=document.getElementById("sky"),ctx=cv.getContext("2d");
+function draw(){
+  const dpr=Math.min(window.devicePixelRatio||1,2);
+  const w=innerWidth,h=innerHeight;
+  cv.width=w*dpr;cv.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.fillStyle="#05060f";ctx.fillRect(0,0,w,h);
+  const rnd=mulberry32(SEED);
+  const cx=w/2,cy=h*.42,R=Math.min(w,h)*.46;
+
+  /* background stars */
+  const starCols=["#ffffff","#cfd8ff","#ffe9c4","#ffd2a1"];
+  for(let i=0;i<900;i++){
+    const x=rnd()*w,y=rnd()*h,s=-Math.log(1-rnd())*.9;
+    ctx.globalAlpha=.7;
+    ctx.fillStyle=starCols[Math.min(3,Math.floor(rnd()*4))];
+    ctx.beginPath();ctx.arc(x,y,Math.min(s,2.2)/2+.3,0,7);ctx.fill();
+  }
+
+  /* ejecta shells */
+  for(const L of LAYERS){
+    const dimmed=focusKey&&focusKey!==L.k;
+    for(let i=0;i<L.n;i++){
+      const th=rnd()*Math.PI*2;
+      const g=(rnd()+rnd()+rnd()+rnd()-2)/2;           /* ~gaussian */
+      const turb=1+.35*Math.sin(7*th+L.r0*40)+.18*g;
+      const r=L.r0*Math.abs(turb)*(0.75+rnd()*.5)*R/0.7;
+      const x=cx+r*Math.cos(th),y=cy+r*Math.sin(th);
+      const size=-Math.log(1-rnd())*6*(1.6-L.r0);
+      ctx.globalAlpha=(dimmed?.06:.55)*Math.min(1,.3+rnd()*.7);
+      ctx.fillStyle=L.col;
+      ctx.beginPath();ctx.arc(x,y,Math.sqrt(size)/2+.4,0,7);ctx.fill();
+    }
+  }
+
+  /* neutron star */
+  const nsDim=focusKey&&focusKey!=="ns";
+  for(const[g,a]of[[46,.05],[29,.1],[17,.25],[8,.9]]){
+    ctx.globalAlpha=nsDim?a*.15:a;
+    ctx.fillStyle="#ffffff";
+    ctx.beginPath();ctx.arc(cx,cy,g*R/260,0,7);ctx.fill();
+  }
+  ctx.globalAlpha=1;
+}
+addEventListener("resize",draw);
+
+
+/* legend toggle (content is static in the page) */
+document.querySelectorAll('#legend button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    const k=b.dataset.k;
+    focusKey=(focusKey===k)?null:k;
+    document.querySelectorAll('#legend button').forEach(x=>
+      x.setAttribute('aria-pressed',x.dataset.k===focusKey));
+    draw();
+  });
+});
+/* copy link */
+const cb=document.getElementById('copybtn');
+if(cb)cb.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(cb.dataset.url);
+      cb.style.borderColor='var(--c)';setTimeout(()=>cb.style.borderColor='',900);}
+  catch(e){prompt('URL:',cb.dataset.url);}
+});
+draw();
+</script>
+</body>
+</html>
